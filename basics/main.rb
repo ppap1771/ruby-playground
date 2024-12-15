@@ -5,12 +5,12 @@
 name = gets.chomp
 # puts "Hello, #{name}!"
 
-# def foo(name)
-#     res = "Night " + name + "!\n"
-#     return res
-# end
+def foo(name)
+    res = "Night " + name + "!\n"
+    return res
+end
 
-# print foo(name)
+print foo(name)
 
 # This gives error due to data-types
 # puts 'Betty' + 12
