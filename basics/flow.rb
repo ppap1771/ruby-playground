@@ -55,9 +55,19 @@ for i in 0..5
 end
 
 # contrary to python we have redo stmt as well here in ruby which is very interesting and can be used for a lot of use cases 
+# this snippet will go into an ininie loop 
 for i in 0..5
     if i < 2 then
        puts "Value of local variable is #{i}"
        redo
     end
+end
+
+# If retry appears in rescue clause of begin expression, restart from the beginning of the begin body.
+
+begin
+   do_something # exception raised
+rescue
+   # handles error
+   retry  # restart from beginning
 end
