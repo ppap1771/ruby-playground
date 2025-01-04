@@ -15,5 +15,11 @@ Rails.application.routes.draw do
   # get "/products", to: "products#index"
   # post "/products", to: "products#create"
   # get "/products/:id", to: "products#show"
+
+  # The line `resources :products` in the Rails routes file is a shorthand method that generates
+  # multiple routes for a resourceful route for the "products" resource in the application. It
+  # generates the conventional RESTful routes for CRUD operations on the "products" resource,
+  # including routes for listing all products, creating a new product, showing a specific product,
+  # updating a product, and deleting a product.
   resources :products
 end
